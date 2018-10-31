@@ -1,0 +1,27 @@
+{
+  "name": "parcel-react-starter",
+  "version": "1.0.0",
+  "description": "parcel-react-starter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TDKRage/parcel-react-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TDKRage/parcel-react-starter/issues"
+  },
+  "homepage": "https://github.com/TDKRage/parcel-react-starter#readme",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
+}
