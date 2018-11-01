@@ -6,6 +6,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html --open"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,scss}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TDKRage/parcel-react-starter.git"
@@ -28,6 +39,9 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.0",
-    "parcel-bundler": "^1.10.3"
+    "husky": "^1.1.2",
+    "lint-staged": "^8.0.4",
+    "parcel-bundler": "^1.10.3",
+    "prettier": "^1.14.3"
   }
 }
