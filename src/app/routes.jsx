@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
-// eslint-disable-next-line
-import Home from '/pages/home';
+import Home from '/pages/home/index';
 
 import { home } from './urls';
 

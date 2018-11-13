@@ -26,10 +26,12 @@ module.exports = {
   "parserOptions": {
     "allowImportExportEverywhere": true
   },
-  "settings":{
-    "parcel": {
-      "rootDir": "src"
+  "settings": {
+    "import/resolver": {
+      "parcel": {
+        "rootDir": "src"
+      }
     }
-  }
+  },
 };
 
