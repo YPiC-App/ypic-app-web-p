@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   "env": {
     "browser": true,
@@ -24,11 +26,9 @@ module.exports = {
   "parserOptions": {
     "allowImportExportEverywhere": true
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "paths": ["node_modules", "src"]
-      }
+  "settings":{
+    "parcel": {
+      "rootDir": "src"
     }
   }
 };
