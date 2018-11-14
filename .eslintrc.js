@@ -21,6 +21,7 @@ module.exports = {
     "no-multiple-empty-lines": "off",
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
+    "import/no-absolute-path": "off"
   },
   "parser": "babel-eslint",
   "parserOptions": {
