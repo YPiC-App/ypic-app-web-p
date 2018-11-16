@@ -3,3 +3,4 @@
 # Parcel Generated
 .cache
 /dist
+/build

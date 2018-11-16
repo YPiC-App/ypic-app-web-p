@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Button from '@material/react-button';
 import { page2 } from '/app/urls';
 import './styles.scss';
 
-const Home = () => (
+const Home = ({ history: { push } }) => (
   <div className="home">
     <h1>Home</h1>
     <p>I know words. I have the best words.</p>
@@ -23,8 +24,14 @@ const Home = () => (
       honest and my words are more beautiful. We are going to make placeholder
       text great again. Greater than ever before.
     </p>
-    <Link to={page2()}> NEXT PAGE </Link>
+    <Button onClick={() => push(page2())} raised>
+      NEXT PAGE
+    </Button>
   </div>
 );
+
+Home.propTypes = {
+  history: PropTypes.shape().isRequired,
+};
 
 export default Home;
