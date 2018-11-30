@@ -21,6 +21,12 @@
       "pre-commit": "lint-staged"
     }
   },
+  "cache": {
+    "inDev": true,
+    "strategy": "inject",
+    "swDest": "workbox-sw.js",
+    "swSrc": "src\\workbox-sw.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TDKRage/parcel-react-starter.git"
@@ -56,6 +62,7 @@
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "parcel-bundler": "^1.10.3",
+    "parcel-plugin-sw-cache": "^0.2.6",
     "prettier": "^1.15.2",
     "sass": "^1.15.1",
     "stylelint": "^9.9.0",
