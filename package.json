@@ -39,13 +39,13 @@
   },
   "homepage": "https://github.com/TDKRage/parcel-react-starter#readme",
   "dependencies": {
-    "@material/react-button": "^0.7.0",
+    "@material/react-button": "^0.7.1",
     "normalize.css": "^8.0.1",
     "pages": "0.0.16",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-redux": "^5.1.1",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7",
@@ -53,22 +53,22 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.9.0",
+    "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-parcel": "^1.6.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
-    "husky": "^1.2.0",
+    "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "parcel-bundler": "^1.10.3",
     "parcel-plugin-sw-cache": "^0.2.6",
-    "prettier": "^1.15.2",
-    "sass": "^1.15.1",
+    "prettier": "^1.15.3",
+    "sass": "^1.15.2",
     "stylelint": "^9.9.0",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-order": "^2.0.0",
-    "stylelint-scss": "^3.4.0"
+    "stylelint-scss": "^3.4.1"
   }
 }

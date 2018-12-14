@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react';
-import { Route } from 'react-router-dom';
-
-import Home from '/pages/home/index';
-import Page2 from '/pages/page2/index';
+import React, { lazy } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import { home, page2 } from './urls';
 
+const Home = lazy(() => import('/pages/home/index'));
+const Page2 = lazy(() => import('/pages/page2/index'));
+
 const Routes = () => (
-  <Fragment>
+  <Switch>
     <Route exact path={home()} component={Home} />
     <Route exact path={page2()} component={Page2} />
-  </Fragment>
+  </Switch>
 );
 
 export default Routes;
