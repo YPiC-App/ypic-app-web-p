@@ -1,0 +1,35 @@
+@import '@material/button/mixins';
+@import 'assets/styles.scss';
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sign-in__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in__button-group {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin: 5px 0;
+  }
+
+  .facebook-button {
+    @include mdc-button-container-fill-color($facebook-blue);
+  }
+
+  .twitter-button {
+    @include mdc-button-container-fill-color($twitter-blue);
+  }
+
+  .google-button {
+    @include mdc-button-container-fill-color($google-red);
+  }
+}

@@ -1,0 +1,32 @@
+$mdc-theme-secondary: #e85d38;
+$mdc-theme-primary: #1f79b8;
+$mdc-theme-background: #fff;
+
+$google-red: #db4437;
+$facebook-blue: #3b5998;
+$twitter-blue: #1da1f2;
+
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $screen-lg-min) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: $screen-md-min) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: $screen-sm-min) {
+      @content;
+    }
+  }
+}
+
+.center-h {
+  display: flex;
+  justify-content: center;
+}

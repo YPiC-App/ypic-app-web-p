@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '@material/react-button';
-import { page2 } from '/app/urls';
+import { signIn } from '/app/urls';
 import './styles.scss';
 
 const Home = ({ history: { push } }) => (
@@ -24,7 +24,7 @@ const Home = ({ history: { push } }) => (
       honest and my words are more beautiful. We are going to make placeholder
       text great again. Greater than ever before.
     </p>
-    <Button onClick={() => push(page2())} raised>
+    <Button onClick={() => push(signIn())} raised>
       NEXT PAGE
     </Button>
   </div>

@@ -1,0 +1,28 @@
+import React from 'react';
+import Button from '@material/react-button';
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaGooglePlusSquare,
+} from 'react-icons/fa';
+import './styles.scss';
+
+const SignIn = () => (
+  <div className="sign-in">
+    <div className="sign-in__content">
+      <div className="sign-in__button-group">
+        <Button raised className="facebook-button" icon={<FaFacebookSquare />}>
+          Sign in with Facebook
+        </Button>
+        <Button raised className="twitter-button" icon={<FaTwitterSquare />}>
+          Sign in with Twitter
+        </Button>
+        <Button raised className="google-button" icon={<FaGooglePlusSquare />}>
+          Sign in with Google
+        </Button>
+      </div>
+    </div>
+  </div>
+);
+
+export default SignIn;
