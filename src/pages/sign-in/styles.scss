@@ -6,11 +6,30 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: $mdc-theme-primary;
+  background: radial-gradient(
+    circle,
+    lighten($mdc-theme-primary, 10%),
+    darken($mdc-theme-primary, 5%)
+  );
 }
 
 .sign-in__content {
   display: flex;
   flex-direction: column;
+  width: 80%;
+
+  @include breakpoint(tablet) {
+    width: 60%;
+  }
+  @include breakpoint(desktop) {
+    width: 20%;
+  }
+}
+
+.sign-in__logo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .sign-in__button-group {

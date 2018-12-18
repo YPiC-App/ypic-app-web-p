@@ -4,3 +4,8 @@
 .cache
 /dist
 /build
+
+# Firebase
+.firebase
+.firebaserc
+

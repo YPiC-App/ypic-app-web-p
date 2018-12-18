@@ -5,11 +5,19 @@ import {
   FaTwitterSquare,
   FaGooglePlusSquare,
 } from 'react-icons/fa';
+import logo from '/assets/images/logo-round.png';
 import './styles.scss';
 
 const SignIn = () => (
   <div className="sign-in">
     <div className="sign-in__content">
+      <div>
+        <img
+          src={logo}
+          className="sign-in__logo"
+          alt="Young People in Christ"
+        />
+      </div>
       <div className="sign-in__button-group">
         <Button raised className="facebook-button" icon={<FaFacebookSquare />}>
           Sign in with Facebook
