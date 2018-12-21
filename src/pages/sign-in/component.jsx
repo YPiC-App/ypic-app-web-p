@@ -8,7 +8,7 @@ import {
 import logo from '/assets/images/logo-round.png';
 import './styles.scss';
 
-const SignIn = () => (
+const SignIn = ({ onFacebookSignIn }) => (
   <div className="sign-in">
     <div className="sign-in__content">
       <div>
@@ -19,7 +19,12 @@ const SignIn = () => (
         />
       </div>
       <div className="sign-in__button-group">
-        <Button raised className="facebook-button" icon={<FaFacebookSquare />}>
+        <Button
+          raised
+          className="facebook-button"
+          icon={<FaFacebookSquare />}
+          onClick={onFacebookSignIn}
+        >
           Sign in with Facebook
         </Button>
         <Button raised className="twitter-button" icon={<FaTwitterSquare />}>
